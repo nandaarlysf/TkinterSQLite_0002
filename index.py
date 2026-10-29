@@ -31,11 +31,7 @@ def buat_tabel():
     conn.close()
 
 def prediksi_diabetes(gula_darah, bmi, riwayat_ortu):
-    """
-    Aturan prediksi sederhana untuk keperluan pembelajaran.
-    Bukan alat diagnosis medis.
-    """
-
+  
     if gula_darah >= 200:
         if bmi >= 30 or riwayat_ortu == "Ya":
             return "Sangat Tinggi"
